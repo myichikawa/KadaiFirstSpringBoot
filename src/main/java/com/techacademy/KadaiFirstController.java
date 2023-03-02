@@ -25,7 +25,7 @@ public class KadaiFirstController {
 //曜日の取得
        DayOfWeek dayOfWeek = localDate.getDayOfWeek();
 //dayofweek型から表示用の文字列を取得する
-       return dayOfWeek.getDisplayName(TextStyle.SHORT, Locale.JAPANESE);
+       return dayOfWeek.getDisplayName(TextStyle.FULL, Locale.ENGLISH);
     }
 
     @GetMapping("/plus/{val1}/{val2}")
